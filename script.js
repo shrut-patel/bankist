@@ -327,6 +327,7 @@ btnTransfer.addEventListener('click', function (e) {
   e.preventDefault();
   const amount = +inputTransferAmount.value;
   const storedAccounts = JSON.parse(localStorage.getItem('accounts'));
+  createUsernames(storedAccounts);
   const receiverAcc = storedAccounts.find(
     acc => acc.username === inputTransferTo.value,
   );
@@ -397,6 +398,7 @@ btnClose.addEventListener('click', function (e) {
 
     // Hide UI
     containerApp.style.opacity = 0;
+    demoBox.style.opacity = 100;
   }
 
   inputCloseUsername.value = inputClosePin.value = '';
