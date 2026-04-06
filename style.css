@@ -299,3 +299,17 @@ h2 {
 .timer {
   font-weight: 600;
 }
+.demo-instructions {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.5s;
+}
